@@ -59,7 +59,7 @@ void bubble(Item *a, int l, int r)		//冒泡排序
 void distCount(int *a, int l, int r)		//关键字索引算法,空间利用率不高,时间效率为线性
 {
 	int i, j, cnt[M];
-	int b[SIZE_TEST];
+	int b[SIZE_TEST];			//l == 0,b[SIZE_TEST+l]
 	for (j = 0; j < M; j++)			//初始化为0
 		cnt[j] = 0;
 	for (i = l; i <= r; i++)		//将各个元素累计
